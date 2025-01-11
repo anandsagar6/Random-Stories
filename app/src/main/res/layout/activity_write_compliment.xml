@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".WriteComplimentActivity">
+
+    <!-- Header with an image and text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/cross_img"
+            android:src="@drawable/cross_img"
+            android:padding="4dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name,22"
+            android:textSize="20sp"
+            android:id="@+id/txt"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="98dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Description Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="Say something nice about a part of their \nprofile for a better chance to match" />
+
+    <!-- Horizontal Scroll View for images -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:saveEnabled="true"
+        android:scrollbarStyle="insideOverlay"
+        android:layout_marginTop="60dp">
+
+        <!-- LinearLayout to hold CardView items inside HorizontalScrollView -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <!-- CardView for the first image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="270dp"
+                android:layout_height="240dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="25dp"
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/partice_img"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for the second image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="270dp"
+                android:layout_height="240dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="25dp"
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/partice_img"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for the third image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="270dp"
+                android:layout_height="240dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="25dp"
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/partice_img"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for the fourth image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="270dp"
+                android:layout_height="240dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="25dp"
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/partice_img"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write a compliment"
+            android:padding="10dp"
+            android:maxLength="150"
+            android:id="@+id/compliment"
+            android:gravity="center"
+            android:drawableRight="@drawable/edit_img"
+            android:textColorHint="@color/colortextsecond"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edit_text_rounded"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Send"
+            android:id="@+id/sendBtn"
+            android:background="@drawable/backgroundbox"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

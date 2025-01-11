@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/ScreenBackground"
+    tools:context=".PermissionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_margin="16dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/progressLine">
+
+            <!-- Progress steps -->
+            <View
+                android:id="@+id/step1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+
+            <View
+                android:id="@+id/step3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <View
+                android:id="@+id/step5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black" />
+            <View
+                android:id="@+id/step5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black" />
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/lock_logo"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We care about your Privacy"
+            android:textSize="35sp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/archivo_black"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif"
+            android:padding="4dp"
+            android:text="Along with our partners, we store and process info from your device to provide features in the app and improve marketing campaigns.\n\nYou can always make changes or opt-out in your privacy settings. Find out more in our Privacy policy."
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Accept"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:id="@+id/acceptBtn"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/myPrimary"
+            android:background="@drawable/reject_button_bg" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Reject"
+            android:gravity="center"
+            android:id="@+id/rejectBtn"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:layout_marginTop="10dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/reject_button_bg" />
+
+    </LinearLayout>
+
+</ScrollView>

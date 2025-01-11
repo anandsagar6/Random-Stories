@@ -1,0 +1,29 @@
+<!-- res/drawable/circular_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer margin around the border -->
+    <item
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"
+        android:bottom="10dp">
+        <!-- Border Circle -->
+        <shape android:shape="oval">
+            <solid android:color="@color/myPrimary" /> <!-- Background color -->
+            <stroke
+                android:width="4dp"
+            android:color="@color/myPrimary" /> <!-- Border color -->
+        </shape>
+    </item>
+
+    <!-- Inner Circle (Padding around image) -->
+    <item
+        android:left="15dp"
+        android:right="15dp"
+        android:top="15dp"
+        android:bottom="15dp">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" /> <!-- Inner circle color -->
+        </shape>
+    </item>
+</layer-list>

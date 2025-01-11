@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="For you"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/nav_aboutus"
+        android:title="About us"
+        android:icon="@drawable/about" />
+    <item
+        android:id="@+id/nav_ratus"
+        android:title="Rate us"
+        android:icon="@drawable/rate" />
+    <item
+        android:id="@+id/nav_help"
+        android:title="Help and support"
+        android:icon="@drawable/heal_and_support" />
+
+
+
+</menu>

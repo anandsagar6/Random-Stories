@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".OnSingleTapActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/cross_img"
+            android:src="@drawable/cross_img"
+            android:padding="4dp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name,22"
+            android:textSize="20sp"
+            android:id="@+id/txt"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- FrameLayout for stacking the heart animation over the image -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_margin="16dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="25dp"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/partice_img"
+                android:id="@+id/background_image"
+                android:scaleType="centerCrop" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                app:lottie_loop="true"
+                android:id="@+id/Like"
+                app:lottie_rawRes="@raw/heart"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <!-- Horizontal layout for ImageButtons on left and right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Left ImageButton -->
+        <ImageButton
+            android:id="@+id/left_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/compliment_img"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:contentDescription="Left Button"
+            android:layout_marginStart="36dp"
+            android:layout_gravity="start"
+            android:padding="10dp" />
+
+        <!-- Spacer for center alignment -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- Right ImageButton -->
+        <ImageButton
+            android:id="@+id/right_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/red_heart"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:contentDescription="Right Button"
+            android:layout_marginEnd="36dp"
+            android:layout_gravity="end"
+            android:padding="10dp" />
+
+    </LinearLayout>
+</LinearLayout>

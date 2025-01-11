@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ScreenBackground"
+    tools:context=".FirstNameActivity">
+
+    <!-- Progress Line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/progressLine">
+
+        <!-- Progress steps -->
+        <View
+            android:id="@+id/step1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/myPrimary" />
+
+        <View
+            android:id="@+id/step2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/myPrimary" />
+
+        <View
+            android:id="@+id/step3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/myPrimary" />
+
+        <View
+            android:id="@+id/step4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/myPrimary" />
+
+        <View
+            android:id="@+id/step5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black" />
+
+        <View
+            android:id="@+id/step4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black" />
+        <View
+            android:id="@+id/step5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black" />
+
+        <View
+            android:id="@+id/step4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black" />
+        <View
+            android:id="@+id/step4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black" />
+    </LinearLayout>
+
+    <!-- Main content -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:padding="20dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/archivo_black"
+        android:text="What's your first \nname?" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:text="You won't be able to change this \nlater." />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/colortextsecond"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text_rounded"
+        android:drawableLeft="@drawable/person_logo"
+        android:drawablePadding="12dp"
+        android:hint="Add your first name"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/firstbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_margin="30dp"
+        android:textColor="@color/colortextfirst"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_button" />
+
+</LinearLayout>

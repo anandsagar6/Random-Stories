@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".PlansActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/cross_img"
+                android:src="@drawable/cross_img"
+                android:padding="4dp"
+                android:layout_margin="10dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrade to Premium+"
+                android:textSize="20sp"
+                android:id="@+id/txt"
+                android:textColor="@color/black"
+               android:layout_gravity="center"
+                android:layout_marginLeft="48dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                 />
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/people_img"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your likes, up top"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liked someone amazing? We'll make \nsure they see you sooner"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:saveEnabled="true"
+
+           android:scrollbarStyle="insideOverlay"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="25dp"
+                    android:padding="20dp"
+
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/myPrimary">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="MOST POPULAR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/textview_bg" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="35dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="35sp"
+                            android:gravity="center"
+                            android:layout_marginTop="40dp"
+                            android:layout_gravity="center"
+                            android:text="1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:text="month" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center"
+                            android:text="XX INR/wk" />
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="30dp"
+                            android:text="SAVE 45%"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:background="@drawable/textview2_bg"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="25dp"
+                    android:padding="20dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/myPrimary">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="35dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="35sp"
+                            android:gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center"
+                            android:text="3" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:text="months" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center"
+                            android:text="XX INR/wk" />
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="30dp"
+                            android:text="BEST VALUE"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:background="@drawable/textview2_bg"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="25dp"
+                    android:padding="20dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/myPrimary">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="35dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="35sp"
+                            android:gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center"
+                            android:text="1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:text="week" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center"
+                            android:text="XX INR/wk" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- Repeat CardViews as needed -->
+                <!-- Add the other two CardViews here -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

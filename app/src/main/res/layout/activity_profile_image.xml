@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ScreenBackground"
+    tools:context=".ProfileImageActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:id="@+id/progressLine">
+
+            <!-- Progress steps -->
+            <View
+                android:id="@+id/step1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey! Update your profile Photo..."
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="35sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/user"
+            app:civ_border_width="5dp"
+            app:civ_border_overlay="true"
+            app:civ_border_color="@color/myPrimary" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:contentDescription="Camera"
+            android:backgroundTint="@color/myPrimary"
+            app:srcCompat="@drawable/camera_img" />
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_margin="30dp"
+            android:textColor="@color/colortextfirst"
+            android:textStyle="bold"
+            android:id="@+id/nextBtn"
+
+            android:background="@drawable/background_button"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

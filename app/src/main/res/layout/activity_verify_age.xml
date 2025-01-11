@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ScreenBackground"
+
+    tools:context=".VerifyAgeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:id="@+id/progressLine">
+
+            <!-- Progress steps -->
+            <View
+                android:id="@+id/step1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+            <View
+                android:id="@+id/step5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/myPrimary" />
+
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black" />
+            <View
+                android:id="@+id/step4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- Image at the center -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:layout_width="1500dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo18"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- TextView Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Title Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:id="@+id/text3"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/archivo_black"
+                android:text="Please Confirm..."
+                android:textColor="@color/black" />
+
+
+
+            <!-- Age Display Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:id="@+id/age"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Show age"
+                android:textColor="#EB1B0C" />
+        </LinearLayout>
+
+        <!-- Button Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <!-- Yes Button -->
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="Yes"
+                android:id="@+id/yesBtn"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:background="@drawable/background_button"
+                android:layout_marginEnd="30dp" />
+
+            <!-- No Button -->
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="No"
+                android:textStyle="bold"
+                android:id="@+id/noBtn"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:background="@drawable/background_button"
+                android:layout_marginStart="30dp" />
+        </LinearLayout>
+
+        <!-- Lock Image and Info Text Below Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <!-- Lock Image -->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/not"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Lock icon" />
+
+            <!-- Info Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Ensure that your age must be above 18"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

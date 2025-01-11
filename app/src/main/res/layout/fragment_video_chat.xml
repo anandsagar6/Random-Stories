@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".VideoChatFragment">
+
+    <!-- Remote User Video Feed -->
+    <FrameLayout
+        android:id="@+id/remote_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <!-- Remote Video SurfaceView -->
+        <SurfaceView
+            android:id="@+id/remote_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- Local User Video Feed (Small Thumbnail) -->
+    <FrameLayout
+        android:id="@+id/local_video_container"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:elevation="4dp">
+
+        <SurfaceView
+            android:id="@+id/local_video_view"
+            android:background="@drawable/cardview_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- Controls (Mute, Camera toggle, etc.) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Mute Button -->
+        <ImageButton
+            android:id="@+id/mute_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:src="@drawable/mute"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Mute"
+            android:layout_marginEnd="25dp"/>
+
+        <!-- Camera Toggle Button -->
+        <ImageButton
+            android:id="@+id/camera_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/camera_flip"
+            android:scaleType="fitXY"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Camera"
+            android:layout_marginEnd="25dp"/>
+        <ImageButton
+            android:id="@+id/camera_mute_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/video_off"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Camera"
+            android:layout_marginEnd="25dp"/>
+
+        <!-- End Call Button -->
+        <ImageButton
+            android:id="@+id/end_call_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:src="@drawable/end_call"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="End Call"
+            android:layout_marginEnd="25dp"/>
+    </LinearLayout>
+
+</FrameLayout>
